@@ -1,0 +1,36 @@
+	body {
+		background-color: black;
+		color: white;
+		text-align: center;
+		background-size: cover;
+	}
+
+	#container {
+		width: 960px;
+		height: 650px;
+		margin: 0 auto;
+	}
+
+	a:visited {
+		color: blue;
+	}
+
+	h1 {
+		font-family: 'Bowlby One SC', monospace;
+		font-size: 64px;
+	}
+
+	p {
+		font-family: monospace;
+		font-size: 16px;
+	}
+
+	.face {
+		width: 200px;
+	}
+
+	img {
+		width: 200px;
+	}
+
+	

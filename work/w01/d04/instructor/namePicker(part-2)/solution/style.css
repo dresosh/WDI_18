@@ -1,0 +1,18 @@
+body{
+  background: #000000;
+}
+
+#name{
+  margin: 0 auto;
+  height:50px;
+  line-height:50px;
+  width:150px;
+  text-align:center;
+  font-size:2rem;
+  color:white;
+}
+#nextName{
+  width:150px;
+  margin: 0 auto;
+  display:block;
+}

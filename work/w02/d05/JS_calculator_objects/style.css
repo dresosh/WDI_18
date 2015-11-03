@@ -1,0 +1,18 @@
+.number, .operator, .equals, .clear {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;
+}
+
+.board {
+    width: 260px;
+    overflow: auto;
+    margin :0 auto;
+}
+
+.display {
+    height: 50px;
+    width: 258px;
+    border: 1px solid red;
+}

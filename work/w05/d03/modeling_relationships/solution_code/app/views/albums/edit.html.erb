@@ -1,0 +1,29 @@
+<%= form_for @album do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :poster %>
+    <%= f.text_field :poster %>
+  </div>
+  <div>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+  <%= f.label :artist %>
+  <%= f.select :artist_id do %>
+    <%= content_tag( :option, "--", value: "0" ) %>
+    <% @artists.each do |artist| %>
+      <%= content_tag( :option, artist.name, value: artist.id, selected: @album.artist_id == artist.id ) %>
+    <% end %>
+  <% end %>
+  <div>
+    <% Genre.all.each do |g| %>
+      <%= f.check_box :genre_ids, { multiple: true }, g.id, @album.genre_ids.include?(g.id) %>
+      <%= f.label g.name %>
+      <br />
+    <% end %>
+  </div>
+  <%= f.submit %>
+<% end %>

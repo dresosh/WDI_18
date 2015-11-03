@@ -1,0 +1,12 @@
+:host{
+  flex-grow:1;
+  min-height:30px;
+  width:50%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  border:thin solid white;
+  background: darkRed;
+  color:white;
+  padding: 4px;
+}

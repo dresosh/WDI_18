@@ -1,0 +1,20 @@
+{
+  "name": "Angular Custom Filters Lesson",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ga-students/WDI_LA_18",
+  "authors": [
+    "eric.hodonsky@ga.co"
+  ],
+  "description": "Custom Filters",
+  "main": "domain/app.js",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

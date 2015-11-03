@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do Or Not To Do</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="domain/app.js"></script>
+    <script src="domain/controllers/todoscontroller.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="todoApp">
+    <nav class="tabs">
+      <a ui-sref-active="active" ui-sref="home">My List</a>
+      <a ui-sref-active="active" ui-sref="archive">Archives</a>
+    </nav>
+    <div class="wrapper" ui-view ng-controller="TodosController as todos"></div>
+  </body>
+</html>

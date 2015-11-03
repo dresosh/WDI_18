@@ -1,0 +1,23 @@
+h2{
+  margin:0 auto;
+  display:block;
+  width:400px;
+  text-align:center;
+}
+.foodsAndDrinks{
+  width:400px;
+  display:flex;
+  margin:0 auto;
+}
+
+.foodsAndDrinks ul{
+  list-style-type:none;
+  width:200px;
+  padding:0;
+  margin:0;
+}
+
+.foodsAndDrinks ul li{
+  text-align: center;
+  width:100%;
+}

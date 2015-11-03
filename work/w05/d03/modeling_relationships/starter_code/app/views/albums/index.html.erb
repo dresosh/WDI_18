@@ -1,0 +1,19 @@
+<h2>Albums</h2>
+
+<a class="btn" href="/albums/new">Add Album</a>
+
+<div class="albums">
+  <div class="row">
+    <ul>
+      <% @albums.each do |album| %>
+      <li>
+        <%= link_to "#{ album.title } - #{ album.artist.name }" %>
+        <%= link_to "Edit", edit_album_path( album ) %>
+        <div>
+          <%= link_to "Delete", destroy_albums_path( album ), data: { method: "delete" } %>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

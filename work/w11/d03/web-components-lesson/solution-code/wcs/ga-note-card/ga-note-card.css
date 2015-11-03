@@ -1,0 +1,18 @@
+:host{
+  width: 98%;
+  border: thin solid black;
+  border-radius: 0 0 6px 0;
+  background: lightBlue;
+  box-shadow: 0 1px 1px 1px rgba( 0, 0, 0, .5);
+  display:block;
+  margin: 4px auto;
+}
+
+:host:hover{
+  box-shadow: 1px 2px 2px 1px rgba( 0, 100, 200, .5);
+}
+
+:host h3{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Angular UI Lab - Client Side",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ga-students/WDI_LA_18",
+  "authors": [
+    "eric.hodonsky@ga.co"
+  ],
+  "description": "",
+  "main": "domain/app.js",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}

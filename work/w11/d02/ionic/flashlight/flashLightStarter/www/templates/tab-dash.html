@@ -1,0 +1,20 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Experimental</div>
+      <div class="item item-body">
+        <div>
+          <!-- Open driving directions from DTLA to GA -->
+          <a class="button" href=maps://maps.apple.com/?saddr=los+angeles,ca&daddr=34.013138,-118.494997>Open Driving Directions</a><br><br>
+          <!-- Open map with pinpoint of GA -->
+          <a class="button" href=maps://maps.apple.com/?q=1520+2nd+street,santa+monica>Open Map of Address</a><br>
+          <br>
+          <hr>
+          <!-- Turn flash light on of off -->
+          <span class="button" ng-click="toggleFlashlight()">Toggle Flashlight</span><br><br>
+
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color:lightgrey;
+}
+
+.container {
+  width: 50%; 
+  height:100%; 
+  padding-top: 33vh;  
+  margin:auto auto;
+  }
+
+#chosen_one {
+  font-size:100px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  margin:auto auto;
+  text-align:center;
+}
+
+.smallfont {
+  font-size: 25px;
+}

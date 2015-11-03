@@ -1,0 +1,43 @@
+<h1>
+  <%= @bean.name %>
+</h1>
+
+<p>
+  <strong>Roast:</strong>
+  <%= @bean.roast %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @bean.quantity %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @bean.origin %>
+</p>
+
+
+<%= link_to 'Edit', edit_bean_path(@bean) %> |
+<%= link_to 'Back', beans_path %>
+
+<h2> Comments </h2>
+	<% @bean.comments.each do |comment| %>
+		<p> 
+			<%= comment.body %>, <strong><%= comment.commenter %></strong>
+		</p>	
+
+	<% end %>
+
+
+<h4> Add a comment: </h4>	
+
+<%= form_for([@bean, @bean.comments.build]) do |f| %>
+
+	<p><%= f.label :commenter %>  <%= f.text_field :commenter %> </p>
+	<p><%= f.label :body %> <%= f.text_field :body %> </p>
+	<%= f.submit %>
+
+<% end %>
+
+

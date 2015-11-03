@@ -1,0 +1,24 @@
+.primero {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: yellow; } 
+  .primero li {
+    font-size: 24px;
+    color: green; }
+
+.segundo {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: pink; }
+  .segundo li {
+    font-size: 40px;
+    color: blue; }
+
+.third {
+  border: 2px solid black;
+  border-radius: 50px;
+  color: red; }
+  .third li {
+    display: inline; }
+
+/*# sourceMappingURL=style.css.map */

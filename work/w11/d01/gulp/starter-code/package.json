@@ -1,0 +1,27 @@
+{
+  "name": "Gulp",
+  "version": "0.0.1",
+  "description": "Setup for gulp things: Nodemon, linters, mocha, and less -> css",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-less": "^3.0.3",
+    "gulp-mocha": "^2.1.3",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "http-server": "^0.8.5",
+    "jshint-stylish": "^2.0.1",
+    "requiredir": "^1.0.7",
+    "tap": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC"
+}

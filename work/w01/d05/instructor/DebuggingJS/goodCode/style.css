@@ -1,0 +1,21 @@
+body {
+	background: black;
+	color: white;
+}
+
+#name{
+	margin: 0 auto;
+	color:white;
+	width:200px;
+	font-size:3rem;
+	font-weight:bold;
+	text-align: center;
+}
+
+#nextName{
+	margin: 0 auto;
+	display:block;
+	width:200px;
+	text-align: center;
+  cursor:pointer;
+}

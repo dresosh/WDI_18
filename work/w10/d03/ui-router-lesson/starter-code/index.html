@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do Or Not To Do</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="domain/app.js"></script>
+    <script src="domain/controllers/todoscontroller.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="todoApp">
+    <div class="wrapper" ng-controller="TodosController as todos">
+      <header>
+        <h1>YOU'VE GOT {{ todos.remainingTodos().length }} THING(S) TO DO!</h1>
+        <h4>{{ todos.completedTodos().length }} things completed | {{ todos.remainingTodos().    length   }}    things remaining</h4>
+      </header>
+      <main>
+          <form class="add-todo" ng-submit="todos.addTodo()">
+            <input class="text-box" type="text" placeholder="I need to..." ng-model="todos.text">
+            <input type="submit" class="btn btn-add" value="+">
+          </form>
+          <section class="todo-list">
+            <ul>
+              <li ng-repeat="todo in todos.remainingTodos()">
+                <input class="checkbox" type="checkbox" ng-model="todo.done" id="todo-           {{$index}}">
+                <label for="todo-{{$index}}" ng-class="{done: todo.done}">{{ todo.task }}</label>
+                <button class="btn btn-delete" ng-click="todos.deleteTodo(todo.id)">x</button>
+              </li>
+            </ul>
+          </section>
+      </main>
+    </div>
+  </body>
+</html>

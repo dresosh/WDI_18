@@ -1,0 +1,30 @@
+h1 {
+	text-align: center; /* this centers the h1 element */
+}
+
+.board {
+	width: 306px; /* this will only provide enough space for 3 boxes in a row. We don't need a height, because it will expand according to its contents*/
+	margin: 0 auto; /* this centers the board */
+	overflow: auto; /* this is a very simple way of clearing floats that works almost all of the time - see www.learnlayout.com */
+}
+
+.box {
+	float: left; /* this floats all the boxes to the left */
+	border: 1px solid black;
+	width: 100px; /* the 100px width means only 3 boxes in a row can fit in the baord container */
+	height: 100px;
+	font-size: 50px;
+	text-align:center; /* this centers the text horizontally */
+	line-height:100px; /* this centers the text vertically, by making the text 'think' that it is 100px tall */
+
+	/*http://howtocenterincss.com/*/
+
+	/* If you used inline-block, you might have had this problem:*/
+	/* http://stackoverflow.com/questions/17902102/div-position-changed-when-text-is-added */
+	/* http://stackoverflow.com/questions/16241927/why-does-adding-a-span-to-an-inline-block-div-change-its-layout */
+}
+
+.button-container {
+	margin-top: 20px;
+	text-align: center
+}

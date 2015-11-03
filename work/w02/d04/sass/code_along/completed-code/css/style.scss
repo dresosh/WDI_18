@@ -1,0 +1,32 @@
+$primaryBackground: yellow;
+$secondaryBackground: pink;
+$thirdColor: red;
+
+@mixin roundedCorners($borderPixels:5px){
+  border: 2px solid black;
+  border-radius: $borderPixels;
+}
+
+.primero {
+  @include roundedCorners;
+  background-color: $primaryBackground;
+  li {
+    font-size: 24px;
+    color: green;
+  }
+}
+.segundo {
+  @include roundedCorners(20px);
+  background-color: $secondaryBackground;
+  li {
+    font-size: 40px;
+    color: blue;
+  }
+}
+.third{
+  @include roundedCorners(50px);
+  color: $thirdColor;
+  li{
+    display: inline;
+  }
+}

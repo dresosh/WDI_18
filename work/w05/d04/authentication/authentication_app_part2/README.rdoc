@@ -1,0 +1,10 @@
+This is a basic authentication example app.
+
+There are three extra things I have added since the lesson:
+
+1) A root route (set to users#new)
+
+2) Automatic login for when a user signs up for the first time
+
+3) "include SessionsHelper" in the users controller. This allows us to use the "current_user" method (that was defined in sessions_helper.rb)
+in our controller, if we really want to.

@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Angular Custom Filters Lesson</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="domain/app.js"></script>
+    <script src="domain/controllers/TodosController.js"></script>
+  </head>
+  <body ng-app="markFilter" ng-controller="TodosController as list">
+    <div ng-repeat="item in list.getAll()"> {{ item.name | mark }} - {{ item.name }}</div>
+    <div ng-repeat="item in list.getAll()"> {{ 200 | money }} </div>
+  </body>
+</html>

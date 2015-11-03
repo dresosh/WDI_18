@@ -1,0 +1,23 @@
+{
+  "name": "solution-code",
+  "homepage": "https://github.com/ga-students/WDI_LA_18",
+  "authors": [
+    "eric.hodonsky@generalassemb.ly"
+  ],
+  "description": "Web Components w/ Polymer",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.1.5",
+    "director": "~1.2.8"
+  }
+}

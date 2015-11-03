@@ -1,0 +1,14 @@
+{
+  "name": "solution-code",
+  "version": "0.0.1",
+  "description": "Web Components w/ Polymer",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.8.5"
+  }
+}
